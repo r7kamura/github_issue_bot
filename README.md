@@ -28,6 +28,7 @@ $ curl -u 'github_username' -d '{"scopes":["repo"],"note":"Help example"}' https
 ```
 
 ## IRC Command
+`<--` is your input, and `-->` is bot's output.
 
 ### list
 
