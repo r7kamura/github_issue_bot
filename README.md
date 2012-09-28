@@ -15,7 +15,7 @@ $ heroku config:add  \
   IRC_USERNAME="..." \
   GITHUB_USER="..."  \
   GITHUB_REPO="..."  \
-  GITHUB_TOKEN=.".."
+  GITHUB_TOKEN="..."
 $ git push heroku master
 $ heroku ps:scale bot=1
 ```
