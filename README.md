@@ -21,7 +21,7 @@ $ heroku ps:scale bot=1
 ```
 
 ### How to get github access token
-To get github access token, please type the following command.
+Type the following command.
 
 ```
 $ curl -u 'github_username' -d '{"scopes":["repo"],"note":"Help example"}' https://api.github.com/authorizations
