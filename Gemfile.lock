@@ -36,7 +36,6 @@ GEM
       rack (~> 1.2)
     rack (1.4.1)
     simple_oauth (0.1.9)
-    slop (3.3.2)
     twitter-stream (0.1.16)
       eventmachine (>= 0.12.8)
       http_parser.rb (~> 0.5.1)
@@ -54,4 +53,3 @@ PLATFORMS
 DEPENDENCIES
   chatroid
   github_api
-  slop
