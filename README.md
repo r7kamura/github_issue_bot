@@ -6,7 +6,7 @@ Assume that you are going to deploy this bot on Heroku.
 
 ```
 # Fork this repo, and clone the code from your repo.
-$ git clone git@github.com:<your-name>/chatroid.git
+$ git clone git@github.com:<your-name>/github_issue_bot.git
 $ heroku create <your_favorite_bot_name> --stack cedar
 $ heroku config:add  \
   IRC_SERVER="..."   \
