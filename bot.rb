@@ -36,6 +36,9 @@ Chatroid.new do
     when /^close #(\d+)/
       issue = config[:client].close($1)
       privmsg config[:channel], ":closed: #{issue}"
+
+    when /^help/
+      privmsg config[:channel], ":https://github.com/r7kamura/github_issue_bot"
     end
   end
 end.run!
