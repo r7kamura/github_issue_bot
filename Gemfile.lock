@@ -1,0 +1,57 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    avalon (0.0.3)
+    chatroid (0.0.8)
+      avalon
+      twitter-stream
+      twitter_oauth
+      xmpp4r
+      zircon
+    eventmachine (1.0.0)
+    faraday (0.8.4)
+      multipart-post (~> 1.1)
+    github_api (0.7.0)
+      faraday (~> 0.8.1)
+      hashie (~> 1.2.0)
+      multi_json (~> 1.3)
+      nokogiri (~> 1.5.2)
+      oauth2
+    hashie (1.2.0)
+    http_parser.rb (0.5.3)
+    httpauth (0.2.0)
+    json (1.7.5)
+    jwt (0.1.5)
+      multi_json (>= 1.0)
+    mime-types (1.19)
+    multi_json (1.3.6)
+    multipart-post (1.1.5)
+    nokogiri (1.5.5)
+    oauth (0.4.7)
+    oauth2 (0.8.0)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
+    rack (1.4.1)
+    simple_oauth (0.1.9)
+    slop (3.3.2)
+    twitter-stream (0.1.16)
+      eventmachine (>= 0.12.8)
+      http_parser.rb (~> 0.5.1)
+      simple_oauth (~> 0.1.4)
+    twitter_oauth (0.4.3)
+      json (>= 1.1.9)
+      mime-types (>= 1.16)
+      oauth (>= 0.4.1)
+    xmpp4r (0.5)
+    zircon (0.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chatroid
+  github_api
+  slop
