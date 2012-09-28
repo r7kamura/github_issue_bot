@@ -20,9 +20,61 @@ $ git push heroku master
 $ heroku ps:scale bot=1
 ```
 
-## etc
+### How to get github access token
 To get github access token, please type the following command.
 
 ```
 $ curl -u 'github_username' -d '{"scopes":["repo"],"note":"Help example"}' https://api.github.com/authorizations
+```
+
+## IRC Command
+
+### list
+
+```
+<-- list
+--> list: #1 foo
+--> list: #2 bar
+```
+
+### show
+
+```
+<-- #2
+--> show: #2 bar
+```
+
+### create
+
+```
+<-- create baz
+--> created: #3 baz
+```
+
+with assignee...
+
+```
+<-- create boo [alice]
+--> created: #4 boo [alice]
+```
+
+### edit
+
+```
+<-- edit #1 poo
+--> edited: #1 poo
+```
+
+with assignee...
+
+```
+<-- edit #1 poo [alice]
+--> edited: #1 poo [alice]
+```
+
+### close
+
+```
+<-- close #2 bar
+--> closed: #2 bar
 ```
