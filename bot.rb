@@ -15,24 +15,25 @@ Chatroid.new do
   )
 
   on_privmsg do |message|
-    if message.body =~ /^list/
+    case message.body
+    when /^list/
       config[:client].all.reverse_each do |issue|
         privmsg config[:channel], ":list: #{issue}"
       end
 
-    elsif message.body =~ /^#(\d+)/
+    when/^#(\d+)/
       issue = config[:client].get($1)
       privmsg config[:channel], ":show: #{issue}"
 
-    elsif message.body =~ /^create (.+)(?: \[(.+)\])?/
+    when /^create (.+)(?: \[(.+)\])?/
       issue = config[:client].create($1, $2)
       privmsg config[:channel], ":created: #{issue}"
 
-    elsif message.body =~ /^edit #(\d+) (.+)(?: \[(.+)\])?/
+    when /^edit #(\d+) (.+)(?: \[(.+)\])?/
       issue = config[:client].edit($1, $2)
       privmsg config[:channel], ":edited: #{issue}"
 
-    elsif message.body =~ /^close #(\d+)/
+    when /^close #(\d+)/
       issue = config[:client].close($1)
       privmsg config[:channel], ":closed: #{issue}"
     end
